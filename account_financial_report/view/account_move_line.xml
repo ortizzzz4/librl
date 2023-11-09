@@ -1,0 +1,11 @@
+<record id="move_line_form" model="ir.ui.view">
+    <field name="name">move.line.form</field>
+    <field name="model">account.move.line</field>
+    <field name="inherit_id" ref="account.view_move_line_tree" />
+    <field name="arch" type="xml">
+        <xpath expr="//field[@name='credit']" position="after">
+            <field name="suma_debit"/>
+            <field name="suma_credit"/>
+        </xpath>
+    </field>
+</record>
